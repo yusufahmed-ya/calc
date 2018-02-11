@@ -51,7 +51,6 @@ function onDelete() {
 }
 
 function onClear() {
-    alert('hi');
     document.getElementById("input1").value = "";
     document.getElementById("operator").value = "";
     document.getElementById("input2").value = "";
