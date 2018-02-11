@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="calc.css">
+    <title>calculator</title>
+</head>
+
+<body>
+
+    <div class="calc">
+        <div class="container">
+            <input id="input1" type="number" onmousedown="onSelectedInputChange('input1')" placeholder="0">
+            <input id="operator" type="text" placeholder="+">
+            <input id="input2" type="number" onmousedown="onSelectedInputChange('input2')" placeholder="0">
+            <input id="output" type="text" readonly placeholder="0">
+        </div>
+        <div class="container">
+            <button class="btn btn-primary" onclick="onInputEnter(7)">7</button>
+            <button class="btn btn-primary" onclick="onInputEnter(8)">8</button>
+            <button class="btn btn-primary" onclick="onInputEnter(9)">9</button>
+            <button class="aritmatic btn btn-primary" onclick="onInputOperator('÷')">÷</button>
+
+        </div>
+        <div class="container">
+            <button class="btn btn-primary" onclick="onInputEnter(4)">4</button>
+            <button class="btn btn-primary" onclick="onInputEnter(5)">5</button>
+            <button class="btn btn-primary" onclick="onInputEnter(6)">6</button>
+            <button class="aritmatic btn btn-primary" onclick="onInputOperator('×')">×</button>
+        </div>
+
+        <div class="container">
+            <button class="btn btn-primary" onclick="onInputEnter(1)">1</button>
+            <button class="btn btn-primary" onclick="onInputEnter(2)">2</button>
+            <button class="btn btn-primary" onclick="onInputEnter(3)">3</button>
+            <button class="aritmatic btn btn-primary" onclick="onInputOperator('-')">-</button>
+
+        </div>
+
+        <div class="container">
+            <button class="btn btn-primary" onclick="onInputEnter('.')">.</button>
+            <button class="btn btn-primary" onclick="onInputEnter(0)">0</button>
+            <button class="btn btn-primary" onclick="onCalculate()">=</button>
+            <button class="aritmatic btn btn-primary" onclick="onInputOperator('+')">+</button>
+        </div>
+        <div class="container">
+            <button class="btn btn-primary clear" onclick="onClear()">Clear</button>
+            <button class="btn btn-primary clear" onclick="onDelete()">del</button>
+        </div>
+
+    </div>
+
+</body>
+<script src="calc.js"></script>
+
+</html>
