@@ -1,4 +1,9 @@
 let selectedInput = "input1";
+document.onclick = function () {
+	var newBtn = document.createElement('button');
+	newBtn.onclick = function () {};
+	document.body.appendChild(newBtn);
+}
 function onInputEnter(input) {
     var element = document.getElementById(selectedInput);
     element.value += input;
